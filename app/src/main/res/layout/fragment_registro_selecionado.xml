@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- TextView: Data -->
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/31/2024"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        tools:text="12/31/2024"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView: Meta diária -->
+    <TextView
+        android:id="@+id/tv_meta_diaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meta diária: 2000 ml"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView: Quantidade consumida -->
+    <TextView
+        android:id="@+id/tv_quantidade_consumida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade consumida: 2200 ml"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_meta_diaria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView: Excluir registro -->
+    <TextView
+        android:id="@+id/tv_excluir_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir registro"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_quantidade_consumida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

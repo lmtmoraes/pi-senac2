@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- TextView: Período (Manhã) -->
+    <TextView
+        android:id="@+id/tv_periodo_manha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manhã"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- TextView: Horário (Manhã) -->
+    <TextView
+        android:id="@+id/tv_horario_manha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:00 AM"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_periodo_manha"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Clickable TextView: Excluir (Manhã) -->
+    <TextView
+        android:id="@+id/tv_excluir_manha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_periodo_manha"
+        app:layout_constraintStart_toEndOf="@id/tv_horario_manha"
+        app:layout_constraintBottom_toBottomOf="@id/tv_horario_manha"
+        android:layout_marginStart="38dp" />
+
+    <!-- TextView: Período (Tarde) -->
+    <TextView
+        android:id="@+id/tv_periodo_tarde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarde"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_horario_manha"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView: Horário (Tarde) -->
+    <TextView
+        android:id="@+id/tv_horario_tarde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:00 PM"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_periodo_tarde"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Clickable TextView: Excluir (Tarde) -->
+    <TextView
+        android:id="@+id/tv_excluir_tarde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_periodo_tarde"
+        app:layout_constraintStart_toEndOf="@id/tv_horario_tarde"
+        app:layout_constraintBottom_toBottomOf="@id/tv_horario_tarde"
+        android:layout_marginStart="38dp" />
+
+    <!-- TextView: Período (Noite) -->
+    <TextView
+        android:id="@+id/tv_periodo_noite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noite"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_horario_tarde"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView: Horário (Noite) -->
+    <TextView
+        android:id="@+id/tv_horario_noite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07:00 PM"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv_periodo_noite"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Clickable TextView: Excluir (Noite) -->
+    <TextView
+        android:id="@+id/tv_excluir_noite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:padding="10dp"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/tv_periodo_noite"
+        app:layout_constraintStart_toEndOf="@id/tv_horario_noite"
+        app:layout_constraintBottom_toBottomOf="@id/tv_horario_noite"
+        android:layout_marginStart="38dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
