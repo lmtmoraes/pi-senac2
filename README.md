@@ -1,0 +1,1 @@
+Repositório do projeto para a segunda entrega da disciplina PROJETO INTEGRADOR: DESENVOLVIMENTO DE SISTEMAS ORIENTADO A DISPOSITIVOS MÓVEIS E BASEADOS NA WEB.
